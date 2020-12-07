@@ -98,12 +98,12 @@
 				.readyCallback = function () {
 					t.DOMReady = !0
 				}, t.supports.everything || (n = function () {
-						t.readyCallback()
-					}, a.addEventListener ? (a.addEventListener("DOMContentLoaded", n, !1), e.addEventListener("load", n, !
+					t.readyCallback()
+				}, a.addEventListener ? (a.addEventListener("DOMContentLoaded", n, !1), e.addEventListener("load", n, !
 					1)) : (e.attachEvent("onload", n), a.attachEvent("onreadystatechange", function () {
-						"complete" === a.readyState && t.readyCallback()
-					})), (r = t.source || {}).concatemoji ? d(r.concatemoji) : r.wpemoji && r.twemoji && (d(r.twemoji), d(r
-						.wpemoji)))
+					"complete" === a.readyState && t.readyCallback()
+				})), (r = t.source || {}).concatemoji ? d(r.concatemoji) : r.wpemoji && r.twemoji && (d(r.twemoji), d(r
+					.wpemoji)))
 		}(window, document, window._wpemojiSettings);
 	</script>
 	<style type="text/css">
@@ -993,6 +993,20 @@
 								</div>
 							</div>
 
+							<h2>Vista virtual</h2>
+
+
+
+							<figure style="width:750px;height:300px"
+								class="wp-block-algori-360-image-block-algori-360-image aligncenter">
+								<a-scene loading-screen="enabled: false;"
+									device-orientation-permission-ui="enabled: false" embedded="">
+									<a-entity camera="" look-controls="reverseMouseDrag: true"></a-entity>
+									<a-sky src="img/sala2-1.jpg"></a-sky>
+								</a-scene>
+							</figure>
+
+
 
 
 							<h2>Capacidades</h2>
@@ -1224,7 +1238,7 @@
 					}));
 					$('div.bubble-txt', 'div.wpcom-bubble').html(
 						"New posts from this blog will now appear in \u003Ca target=\u0022_blank\u0022 href=\u0022http:\/\/es.wordpress.com\/\u0022\u003Eyour reader\u003C\/a\u003E. You can manage email alerts from your \u003Ca target=\u0022_blank\u0022 href=\u0022http:\/\/es.wordpress.com\/following\/edit\/\u0022\u003Esubscriptions page\u003C\/a\u003E."
-						);
+					);
 
 					$('div.wpcom-bubble.action-bubble').addClass('fadein');
 

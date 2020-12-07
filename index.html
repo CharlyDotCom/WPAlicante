@@ -995,19 +995,23 @@
 
 							<h2>Vista virtual</h2>
 
-
-
-							<figure style="width:750px;height:300px"
-								class="wp-block-algori-360-image-block-algori-360-image aligncenter">
-								<a-scene loading-screen="enabled: false;"
-									device-orientation-permission-ui="enabled: false" embedded="">
-									<a-entity camera="" look-controls="reverseMouseDrag: true"></a-entity>
-									<a-sky src="img/sala2-1.jpg"></a-sky>
-								</a-scene>
-							</figure>
-
-
-
+							<!-- #TODO  incluir vista URL -->
+							<link rel="stylesheet" href="css/pannellum.css" />
+    						<script type="text/javascript" src="js/pannellum.js"></script>
+							<style>
+								#panorama {
+									width: 750px;
+									height: 300px;
+								}
+							</style>
+							<div id="panorama"></div>
+							<script>
+								pannellum.viewer('panorama', {
+									"type": "equirectangular",
+									"panorama": "img/sala2-1.jpg",
+									"autoLoad": true
+								});
+							</script>
 
 							<h2>Capacidades</h2>
 
